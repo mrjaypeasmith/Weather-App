@@ -1,0 +1,94 @@
+/* https://coolors.co/55dde0-33658a-2f4858-f6ae2d-f26419 */
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 2fr 1fr 2fr;
+ 
+}
+
+@media (max-width: 600px)  {
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2 auto;
+    }
+
+    .main {
+        text-align: center;
+        
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .sidebar {
+        text-align: center;
+        
+        grid-column: 1 / 2; 
+        grid-row: 2; 
+    }
+
+    .box {
+        min-height: 200px; !important
+    }
+
+}
+
+body {
+    margin: 15px;
+
+}
+
+section {
+    grid-column: 1 / 3;
+    background-color:  #55DDE0;
+    border-top: 10px solid #33658A;
+    min-height: 300px;
+}
+
+aside {
+    grid-column: 3 / 4;
+    background-color: #F6AE2D;
+    border-top: 10px solid #F26419;
+    min-height: 300px;
+   
+}
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 10px;
+    color: #BBBBBB;
+}
+
+header {
+    grid-column: 1 / 4;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #AAAAAA;
+    text-align: center;
+}
+
+.box {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif; 
+  padding: 20px;
+  /* min-height: 300px; */
+  font-size: 150%;
+  box-shadow: 0 8px 12px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+/* link styling */
+
+a {
+    color: #33658A;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
