@@ -1,5 +1,6 @@
 /* https://coolors.co/55dde0-33658a-2f4858-f6ae2d-f26419 */
 
+/* display grid */
 
 .wrapper {
   display: grid;
@@ -7,6 +8,8 @@
   grid-template-columns: 2fr 1fr 2fr;
  
 }
+
+/* media query  */
 
 @media (max-width: 600px)  {
     .wrapper {
@@ -18,14 +21,12 @@
 
     .main {
         text-align: center;
-        
         grid-column: 1 / 2;
         grid-row: 1;
     }
 
     .sidebar {
         text-align: center;
-        
         grid-column: 1 / 2; 
         grid-row: 2; 
     }
@@ -36,10 +37,10 @@
 
 }
 
+/* main styling */
+
 body {
     margin: 15px;
-    text-align: center; 
-
 }
 
 section {
@@ -47,6 +48,8 @@ section {
     background-color:  #55DDE0;
     border-top: 10px solid #33658A;
     min-height: 300px;
+    /* display: grid;
+    grid-template-columns: 2; */
 }
 
 aside {
@@ -74,10 +77,14 @@ header {
 .box {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif; 
-  padding: 20px;
+  padding: 35px;
   /* min-height: 300px; */
   font-size: 150%;
   box-shadow: 0 8px 12px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+#icon {
+    font-size: 200%;
 }
 
 /* link styling */
@@ -92,4 +99,10 @@ a:link {
 
 a:visited {
     text-decoration: none;
+}
+
+/* temperature toggle UI */
+
+.wi-celsius:hover, .wi-fahrenheit:hover {
+    color: #F26419;
 }
